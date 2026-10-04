@@ -61,12 +61,27 @@ class _HomeState extends State<Home> {
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: showHowToPlayDialog,
-              child: const Text(
-                'Play Game',
-                style: TextStyle(fontSize: 25),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: showHowToPlayDialog,
+                  child: const Text(
+                    'Play Game',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                ElevatedButton(
+                  onPressed: () {
+                    context.push('/highscore');
+                  },
+                  child: const Text(
+                    'High Score',
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

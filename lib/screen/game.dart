@@ -59,12 +59,18 @@ class _GameState extends State<Game> with SingleTickerProviderStateMixin {
   ];
 
   final List<RiverLog> _logs = [
-    RiverLog(lane: 3, x: 20, speed: 80, width: 110),
-    RiverLog(lane: 3, x: 220, speed: 80, width: 110),
-    RiverLog(lane: 2, x: 40, speed: -110, width: 125),
-    RiverLog(lane: 2, x: 250, speed: -110, width: 125),
+    // Lane 3
+    RiverLog(lane: 3, x: 0, speed: 80, width: 110),
+    RiverLog(lane: 3, x: 190, speed: 80, width: 110),
+    RiverLog(lane: 3, x: 380, speed: 80, width: 110),
+    // Lane 2
+    RiverLog(lane: 2, x: 20, speed: -110, width: 125),
+    RiverLog(lane: 2, x: 220, speed: -110, width: 125),
+    RiverLog(lane: 2, x: 420, speed: -110, width: 125),
+    // Lane 1
     RiverLog(lane: 1, x: 10, speed: 95, width: 105),
-    RiverLog(lane: 1, x: 210, speed: 95, width: 105),
+    RiverLog(lane: 1, x: 200, speed: 95, width: 105),
+    RiverLog(lane: 1, x: 390, speed: 95, width: 105),
   ];
 
   @override
